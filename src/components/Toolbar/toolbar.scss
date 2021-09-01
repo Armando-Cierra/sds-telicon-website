@@ -1,0 +1,35 @@
+@import '~@2600hz/sds-core/sds-tools';
+
+.toolbar {
+  @include sds-flex(space-between, center);
+  @include sds-shadow(1);
+  @include sds-index(app-nav);
+  @include sds-transition(standard, enviromental);
+  @include sds-screen(xs) {
+    @include sds-flex(center, center);
+  }
+  border-top: 4px solid var(--sds_theme_color_primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: sds-spc(32);
+  height: 84px;
+  background: var(--sds_theme_background_high);
+  margin-top: -84px;
+  .logo {
+    @include sds-flex(center, center);
+    height: 80%;
+    color: var(--sds_theme_text);
+    font-size: 2.5rem;
+    .teliconLogo {
+      height: 50px;
+      margin-right: sds-spc(16);
+      color: var(--sds_theme_color_primary);
+    }
+  }
+}
+
+.showToolbar {
+  margin-top: 0;
+}

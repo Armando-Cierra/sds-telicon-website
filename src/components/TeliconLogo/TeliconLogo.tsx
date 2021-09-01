@@ -5,9 +5,8 @@ const TeliconLogo = () => {
     <svg
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      width="294px"
-      height="95px"
-      viewBox="0 0 294 95"
+      viewBox="0 0 95 95"
+      className="teliconLogo"
     >
       <g className="symbol" fill="currentColor">
         <path

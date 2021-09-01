@@ -1,16 +1,15 @@
 const syncTheme = () => {
-  //Detetcts automatically which is the user's operative system preferences
-  const setThemeAutomatically = () => {
-    const darkTheme = window.matchMedia('(prefers-color-scheme: dark)');
-    if (darkTheme.matches) {
-      document.body.setAttribute('data-theme', 'Dark');
-    } else {
-      document.body.setAttribute('data-theme', 'Light');
-    }
-  };
-
   const savedTheme = window.localStorage.getItem('theme');
   const systemPreference = window.matchMedia('(prefers-color-scheme: light)');
+
+  //Detetcts automatically which is the user's operative system preferences
+  const setThemeAutomatically = () => {
+    if (systemPreference.matches) {
+      document.body.setAttribute('data-theme', 'Default');
+    } else {
+      document.body.setAttribute('data-theme', 'Dark');
+    }
+  };
 
   //Verifies if there is a user preference already saved
   if (!savedTheme) {
