@@ -64,6 +64,8 @@ const IconList = () => {
           <div className="searchBar">
             <h2>Icon Reference Sheet</h2>
             <SearchInput
+              defaultValue=""
+              name=""
               placeholder="Search By Name..."
               id="search"
               onChange={captureData}
