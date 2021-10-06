@@ -1,7 +1,21 @@
 @import '~@2600hz/sds-core/sds-tools';
 
+body[data-theme='Dark'] {
+  .sds_Toast {
+    --sds_toast_background: var(--sds_theme_background_low, #0e0e0f);
+    --sds_toast_text: var(--sds_theme_text, #ffffff);
+  }
+}
+
+body[data-theme='Default'] {
+  .sds_Toast {
+    --sds_toast_background: var(--sds_theme_background_contrast_2);
+  }
+}
+
 .iconList {
   padding-top: 140px;
+  padding-bottom: 80px;
   .container {
     width: 100%;
     max-width: 1440px;

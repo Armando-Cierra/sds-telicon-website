@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@2600hz/sds-core/-/sds-core-1.0.7.tgz#a4e16636142eae8aee8eaf92f7866372c4f53463"
   integrity sha512-V/JhKHB3JfNMSQFDGpGxpsLiLai9StB3/kBVMKRZMeoYpJEe4Xh9W34W0Q8+rr5cmJjJzYB7oqyA/QJsNU7xhA==
 
-"@2600hz/sds-react-components@^1.1.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@2600hz/sds-react-components/-/sds-react-components-1.6.0.tgz#1a3c653ee776b7138b9f9bf9c566749c7c87651d"
-  integrity sha512-Sl6X6kddydufiwZ49LdZxmbO8fUXmR6pu93W2caSaTpDrShiAKTHPiqG6qrCtAjWHI2f5ELCnpQq1MYo+LHURQ==
+"@2600hz/sds-react-components@^1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@2600hz/sds-react-components/-/sds-react-components-1.6.1.tgz#0fd0a0a7932c7e730b4b8f318a9bea50440138b1"
+  integrity sha512-iwbP1oakcrPUhoSw9SUcKDM8VpPZ/T3CmLY/tjQJvJ5J07YUCjQOd/5/hjOcdWOXr8jY8PwnmQaYQUfptaoEzA==
 
 "@2600hz/sds-telicon@^1.1.0":
   version "1.1.0"

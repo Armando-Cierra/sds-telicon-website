@@ -1,3 +1,4 @@
+@import '~@2600hz/sds-core/sds-tools';
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
 
 body[data-theme='Default'],
@@ -16,12 +17,26 @@ body {
   font-family: 'STIX Two Math', serif;
 }
 
-body[data-theme='Default'],
-body[data-theme='Dark'] {
+body[data-theme='Default'] {
   --sds_theme_color_primary: var(--sds_theme_color_purple);
   --sds_theme_color_primary_interactive: var(
     --sds_theme_color_purple_interactive
   );
   --sds_theme_color_primary_tint_1: var(--sds_theme_color_purple_tint_1);
   --sds_theme_color_primary_tint_2: var(--sds_theme_color_purple_tint_2);
+  *::selection {
+    background: var(--sds_theme_color_primary_tint_2);
+    color: var(--sds_theme_text);
+  }
+}
+
+body[data-theme='Dark'] {
+  --sds_theme_color_primary: #{sds-color(purple, 30)};
+  --sds_theme_color_primary_interactive: #{sds-color(purple, 40)};
+  --sds_theme_color_primary_tint_1: var(--sds_theme_color_purple_tint_1);
+  --sds_theme_color_primary_tint_2: var(--sds_theme_color_purple_tint_2);
+  *::selection {
+    background: #{sds-color(purple, 60)};
+    color: var(--sds_theme_text);
+  }
 }

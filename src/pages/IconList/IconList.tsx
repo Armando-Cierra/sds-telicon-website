@@ -1,8 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { SearchInput, Telicon } from '@2600hz/sds-react-components';
+import { useState, useEffect } from 'react';
+import {
+  SearchInput,
+  Telicon,
+  Toast,
+  toastTrigger
+} from '@2600hz/sds-react-components';
 import teliconList from '@2600hz/sds-telicon/telicon-list.json';
 import useActivePage from '../../utils/useActivePage';
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './icon-list.scss';
 
@@ -10,16 +14,6 @@ const IconList = () => {
   const { setActivePage } = useActivePage();
   const [search, setSearch] = useState('');
   const [filteredList, setFilteredList] = useState(teliconList);
-  const notify = () =>
-    toast.success('Icon Name Copied Sucessfully!', {
-      position: 'bottom-right',
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined
-    });
 
   useEffect(() => {
     setActivePage('IconList');
@@ -43,22 +37,12 @@ const IconList = () => {
   const copyText = (e: any) => {
     const value = e.target.getAttribute('data-clipboard-text');
     navigator.clipboard.writeText(value);
-    notify();
+    toastTrigger('Icon Name Copied Successfully!', 'Success', 'bottom-center');
   };
 
   return (
     <>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
+      <Toast />
       <section className="iconList">
         <div className="container">
           <div className="searchBar">
