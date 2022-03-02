@@ -51,6 +51,7 @@ main {
         font-weight: 300;
       }
       .buttonBox {
+        display: flex;
         margin-bottom: sds-spc(16);
         @include sds-screen(sm) {
           @include sds-flex(center, center);
@@ -59,7 +60,7 @@ main {
         @include sds-screen(xs) {
           flex-direction: column;
         }
-        .sds_LinkButton {
+        .sds_Button {
           margin-right: sds-spc(24);
           @include sds-screen(xs) {
             margin-right: 0;

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@2600hz/sds-react-components';
 import { TeliconLogo, ThemeSettings } from '../../components';
 import useActivePage from '../../utils/useActivePage';
@@ -21,20 +22,16 @@ const Home = () => {
         <div className="content">
           <p>A SVG icon collection for Sipster Design System</p>
           <div className="buttonBox">
-            <Button
-              content="View Icons"
-              type="Primary"
-              href="/icon-list"
-              routerLink
-              size="Large"
-            />
-            <Button
-              content="View Documentation"
-              type="Base"
-              href="https://2600hz.gitbook.io/sipster-design-system/"
-              targetBlank
-              size="Large"
-            />
+            <Link to="/icon-list">
+              <Button type="Primary" size="Large">
+                View Icons
+              </Button>
+            </Link>
+            <a href="https://2600hz.gitbook.io/sipster-design-system/">
+              <Button type="Base" size="Large">
+                View Documentation
+              </Button>
+            </a>
           </div>
           <ThemeSettings />
         </div>

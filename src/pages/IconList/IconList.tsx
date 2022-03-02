@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import {
-  SearchInput,
+  Search,
   Telicon,
   Toast,
   toastTrigger
@@ -26,12 +26,8 @@ const IconList = () => {
   }, [search]);
 
   const captureData = (e: any) => {
-    const value = e.target.value;
+    const { value } = e;
     setSearch(value);
-  };
-
-  const cleanData = () => {
-    setSearch('');
   };
 
   const copyText = (e: any) => {
@@ -47,13 +43,10 @@ const IconList = () => {
         <div className="container">
           <div className="searchBar">
             <h2>Icon Reference Sheet</h2>
-            <SearchInput
-              defaultValue=""
-              name=""
+            <Search
               placeholder="Search By Name..."
               id="search"
               onChange={captureData}
-              cleanData={cleanData}
             />
           </div>
           <div className="list">
@@ -64,6 +57,7 @@ const IconList = () => {
                 data-clipboard-text={icon}
                 onClick={copyText}
               >
+                {/*//@ts-expect-error */}
                 <Telicon name={icon} size="Default" />
                 <span>{icon}</span>
               </div>

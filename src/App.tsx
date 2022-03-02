@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home, IconList, Error } from './pages';
 import { Toolbar } from './components';
 import syncTheme from './utils/syncTheme';
@@ -25,14 +25,16 @@ function App() {
   }, [setTheme]);
 
   return (
-    <Router>
-      <Toolbar />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/icon-list" component={IconList} />
-        <Route exact component={Error} />
-      </Switch>
-    </Router>
+    <>
+      <Router>
+        <Toolbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/icon-list" element={<IconList />} />
+          <Route element={<Error />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 

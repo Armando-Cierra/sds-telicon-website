@@ -34,6 +34,9 @@ body[data-theme='Default'] {
         margin-right: sds-spc(32);
         color: var(--sds_theme_text);
       }
+      .sds_Search {
+        width: 100%;
+      }
     }
     .list {
       @include sds-grid(4, sds-spc(24));
