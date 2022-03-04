@@ -7,15 +7,15 @@
   resolved "https://registry.yarnpkg.com/@2600hz/sds-core/-/sds-core-1.1.0.tgz#cc5ab8527ffa9a6543f4887c41f3ea6e798f8536"
   integrity sha512-nF1IY9WKitoJ95viyj9qG3K1kxMq/t8WVquPfoQvnqgzuEZOHPjDWK3c89ECFBZLxOjocV079N6pFTy3nJfwww==
 
-"@2600hz/sds-react-components@^1.28.9":
-  version "1.28.9"
-  resolved "https://registry.yarnpkg.com/@2600hz/sds-react-components/-/sds-react-components-1.28.9.tgz#1f3a9e6b5c494e2c5c000d9d9434a76605baa169"
-  integrity sha512-yoAk88SJPCGe/zFVE1Cxm/vwWSEa1rkC2MlF2sDk3aUebiYkWtMknBJK7qr2DfBqE3XcNlRRrg7yFlTrB9V3pA==
+"@2600hz/sds-react-components@^1.28.11":
+  version "1.28.11"
+  resolved "https://registry.yarnpkg.com/@2600hz/sds-react-components/-/sds-react-components-1.28.11.tgz#530c4d5c0ce60f9e7764a541d63d6560b0017097"
+  integrity sha512-mpBBc0wF/vtgT5G4XkJYPDFGQxMCNKGRJBR636iMvOhTRksQBO2Uf6QyB7pXZydr7x33lYVBqmQFRujvtki89A==
 
-"@2600hz/sds-telicon@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@2600hz/sds-telicon/-/sds-telicon-1.1.2.tgz#f1bb9e6bf983fe705aa44efa223abf60026b3eb1"
-  integrity sha512-NMNlzrxC8Trov1WDG+MPjudp1va1qwX/vGZwS6liTOc3eY4xZI3sCa5wEV12/CQX8H2h+SQKOsmXaHUaA7FJqQ==
+"@2600hz/sds-telicon@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@2600hz/sds-telicon/-/sds-telicon-1.1.5.tgz#c5eec25ee298c6d0647f3ea5122a2285863ac27a"
+  integrity sha512-plPUpkErRq+vrzswLp52pT7w0wdVGDWpr37K1B04yafA6zNA8hF9LEWs+U4l45HNlihpsv+0X1JFE2WGTiQV/g==
 
 "@2600hz/sds-themes@^1.0.6":
   version "1.0.6"
