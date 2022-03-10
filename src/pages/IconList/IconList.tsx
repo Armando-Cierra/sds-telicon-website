@@ -57,6 +57,7 @@ const IconList = () => {
                 data-clipboard-text={icon}
                 onClick={copyText}
               >
+                {/*@ts-expect-error*/}
                 <Telicon name={icon} size="Default" />
                 <span>{icon}</span>
               </div>
